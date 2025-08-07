@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HelmetHub 🪖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>HelmetHub 🪖</h1>
+    <p>Your one-stop shop for premium helmets</p>
+    <button onclick="toggleCart()">🛒 View Cart</button>
+  </header>
+
+  <main>
+    <div class="product">
+      <img src="helmet1.jpg" alt="Helmet 1" />
+      <h2>Rider Pro Helmet</h2>
+      <p>₹1,499</p>
+      <button onclick="addToCart('Rider Pro Helmet', 1499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="helmet2.jpg" alt="Helmet 2" />
+      <h2>Street Style Helmet</h2>
+      <p>₹1,299</p>
+      <button onclick="addToCart('Street Style Helmet', 1299)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="helmet3.jpg" alt="Helmet 3" />
+      <h2>Off-Road Beast</h2>
+      <p>₹1,999</p>
+      <button onclick="addToCart('Off-Road Beast', 1999)">Add to Cart</button>
+    </div>
+  </main>
+
+  <section id="cart" style="display:none;">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> ₹<span id="total">0</span></p>
+    <a id="whatsapp-link" href="#" target="_blank">Buy on WhatsApp</a>
+    <button onclick="toggleCart()">Close</button>
+  </section>
+
+  <footer>
+    <p>© 2025 HelmetHub. Built by Saikiran.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
